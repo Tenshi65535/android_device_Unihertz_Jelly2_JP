@@ -191,7 +191,25 @@ PRODUCT_BOOT_JARS += \
 
 # FeliCa
 PRODUCT_COPY_FILES += \
-# TODO
+vendor/Unihertz/Jelly2_JP/proprietary/framework/com.felicanetworks.felica.jar:system/framework/com.felicanetworks.felica.jar \
+vendor/Unihertz/Jelly2_JP/proprietary/framework/com.felicanetworks.felicaextra.jar:system/framework/com.felicanetworks.felicaextra.jar \
+vendor/Unihertz/Jelly2_JP/proprietary/vendor/etc/felica.cfg:vendor/etc/felica.cfg\
+vendor/Unihertz/Jelly2_JP/proprietary/etc/felica_access.xml:etc/felica_access.xml\
+vendor/Unihertz/Jelly2_JP/proprietary/etc/FelicaCmd.txt:etc/FelicaCmd.txt\
+vendor/Unihertz/Jelly2_JP/proprietary/etc/felica/common.cfg:etc/felica/common.cfg\
+vendor/Unihertz/Jelly2_JP/proprietary/etc/felica/mfm.cfg:etc/felica/mfm.cfg\
+vendor/Unihertz/Jelly2_JP/proprietary/etc/felica/mfs.cfg:etc/felica/mfs.cfg\
+vendor/Unihertz/Jelly2_JP/proprietary/system/app/FeliCaLock/FeliCaLock.apk:system/app/FeliCaLock/FeliCaLock.apk\
+vendor/Unihertz/Jelly2_JP/proprietary/system/app/MobileFeliCaClient/MobileFeliCaClient.apk:system/app/MobileFeliCaClient/MobileFeliCaClient.apk\
+vendor/Unihertz/Jelly2_JP/proprietary/system/app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk:system/app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk\
+vendor/Unihertz/Jelly2_JP/proprietary/system/app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk:system/app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk\
+vendor/Unihertz/Jelly2_JP/proprietary/system/app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk:system/app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk\
+vendor/Unihertz/Jelly2_JP/proprietary/system/etc/permissions/com.felicanetworks.felica.xml:system/etc/permissions/com.felicanetworks.felica.xml\
+vendor/Unihertz/Jelly2_JP/proprietary/system/etc/permissions/com.felicanetworks.felicaextra.xml:system/etc/permissions/com.felicanetworks.felicaextra.xml\
+vendor/Unihertz/Jelly2_JP/proprietary/system/lib/libsony_nfc_nci_jni.so:system/lib/libsony_nfc_nci_jni.so\
+vendor/Unihertz/Jelly2_JP/proprietary/system/lib/libnfc-nci.so:system/lib/libnfc-nci.so\
+vendor/Unihertz/Jelly2_JP/proprietary/system/lib64/libsony_nfc_nci_jni.so:system/lib64/libsony_nfc_nci_jni.so\
+vendor/Unihertz/Jelly2_JP/proprietary/system/lib64/libnfc-nci.so:system/lib64/libnfc-nci.so
 
 #Include GAPPS if applicable 
 $(call inherit-product-if-exists, vendor/opengapps/build/opengapps-packages.mk)
