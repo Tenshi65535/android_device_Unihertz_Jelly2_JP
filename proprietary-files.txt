@@ -149,7 +149,7 @@ etc/sysconfig/a-framework-sysconfig.xml
 # system_ext/lib64/libstnfc-nci.so
 
 etc/felica_access.xml
-etc/felica.cfg
+vendor/etc/felica.cfg
 etc/FelicaCmd.txt
 etc/felica/common.cfg
 etc/felica/mfm.cfg
@@ -159,14 +159,14 @@ system/app/MobileFeliCaClient/MobileFeliCaClient.apk
 system/app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk
 system/app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk
 system/app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk
-system_ext/etc/permissions/com.felicanetworks.felica.xml
-system_ext/etc/permissions/com.felicanetworks.felicaextra.xml
-system_ext/framework/com.felicanetworks.felica.jar
-system_ext/framework/com.felicanetworks.felicaextra.jar
-system_ext/lib/libsony_nfc_nci_jni.so
-system_ext/lib/libnfc-nci.so
-system_ext/lib64/libsony_nfc_nci_jni.so
-system_ext/lib64/libnfc-nci.so
+system/etc/permissions/com.felicanetworks.felica.xml
+system/etc/permissions/com.felicanetworks.felicaextra.xml
+framework/com.felicanetworks.felica.jar
+framework/com.felicanetworks.felicaextra.jar
+system/lib/libsony_nfc_nci_jni.so
+system/lib/libnfc-nci.so
+system/lib64/libsony_nfc_nci_jni.so
+system/lib64/libnfc-nci.so
 
 etc/ams_aal_config.xml
 etc/graphic_ll_cfg.json
@@ -349,7 +349,7 @@ system_ext/bin/rtt
 system_ext/bin/trace
 
 system_ext/etc/init/hw/vendor_init_as_system.rc
-system_ext/etc/permissions/com.nxp.mifare.xml
+# system_ext/etc/permissions/com.nxp.mifare.xml
 system_ext/etc/permissions/system-ext-permissions-mediatek.xml
 system_ext/etc/custom.conf
 system_ext/etc/nr-city.xml
