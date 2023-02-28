@@ -60,15 +60,29 @@ PRODUCT_GMS_CLIENTID_BASE := android-unihertz
 # A/B
 AB_OTA_UPDATER := false
 
-# Additional tools
-PRODUCT_HOST_PACKAGES += \
-    unpack_bootimg \
-    lpmake   
+# Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    libaacwrapper
+
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
+# FMRadio
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmcust \
+    ueventd.mt6771.rc
+   
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
 
 # fstab
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/etc/fstab.mt6771:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6771
-
+    
 # NFC stack (AOSP)
 PRODUCT_PACKAGES += \
     NfcNci
@@ -76,7 +90,7 @@ PRODUCT_PACKAGES += \
 # ImsInit hack
 PRODUCT_PACKAGES += \
     ImsInit
-
+    
 # Init
 PRODUCT_PACKAGES += \
     init.mt6771.rc \
@@ -169,6 +183,11 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.0 \
     android.hardware.soundtrigger@2.1 \
     android.hardware.soundtrigger@2.2
+
+# Additional tools
+PRODUCT_HOST_PACKAGES += \
+    unpack_bootimg \
+    lpmake   
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
