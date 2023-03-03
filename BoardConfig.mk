@@ -5,9 +5,9 @@
 
 -include device/Unihertz/Jelly2/BoardConfigCommon.mk
 
-DEVICE_PATH := device/Unihertz/Jelly2_JP
+DEVICE_REGION_PATH := device/Unihertz/Jelly2_JP
 
 # Kernel
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/boot/Image.gz
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
-BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt/dtb
+TARGET_PREBUILT_KERNEL := $(DEVICE_REGION_PATH)/prebuilt/boot/Image.gz
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_REGION_PATH)/prebuilt/dtbo.img
+BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_REGION_PATH)/prebuilt/dtb
